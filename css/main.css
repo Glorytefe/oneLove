@@ -1,0 +1,283 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&display=swap");
+/* variables */
+
+:root {
+  --navcol: #3adcff;
+  --navtxtcol: #1a1f24;
+  --iconcol: #f1bf45;
+  --bg-col: #f2f5fa;
+  --bg-col2: #f2f5f8;
+  --white: #ffffff;
+  --addpetbg: #e6e9ef;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* index.html */
+/* nav */
+/* nav bg-col */
+.navbar-nav.navbar-center {
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.nav-item{
+padding-right: 50px;
+}
+.navsec {
+  background-color: var(--navcol);
+}
+
+
+/* first sect starts */
+
+/* bgimg & border */
+.banner {
+  background-image: url(/img/Group\ 47.png);
+  border-bottom: 20px solid var(--navcol);
+}
+
+/* txt width */
+.bannrtxt {
+  max-width: 400px;
+}
+
+
+/* btn radius */
+.bts {
+  border-radius: 50px;
+  margin-top: 5px;
+  width: 169px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+
+/* first ends */
+
+/* third */
+/* card link color */
+.con {
+  color: var(--iconcol);
+  cursor: pointer;
+}
+.thrd {
+  background-color: var(--bg-col2);
+  background-image: url(/img/curved-pattern\ 2.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.thirdcont a {
+  color: var(--navtxtcol);
+}
+/* image sizing */
+.imga{
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  height: 350px;
+}
+/* image sizing */
+
+.imgb {
+  max-width: 300px;
+  max-height: 180px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lis {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+/* btn sizing */
+.btv{
+  max-width: 150px;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+}
+/* font sizing */
+.pc{
+  color: #777777;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* fourth sect starts */
+.rowfourth {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  letter-spacing: 1px;
+}
+/* font-sizing */
+.pcs{
+  color: #66717B;
+  line-height: 36px;
+  font-size: 24px;
+}
+.wdth {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* fifth */
+.fifthsect {
+  background-color: var(--bg-col);
+}
+.contxt {
+  background-color: var(--white);
+  margin: -20px auto auto auto;
+}
+/* footer */
+.foot {
+  background-color: var(--navtxtcol);
+  border-top: 8px solid var(--navcol);
+}
+
+/* add pet.html page starts */
+/* nav starts here */
+.addnav {
+  background-color: var(--navtxtcol);
+}
+
+.ulnavs li a {
+  color: var(--white) !important;
+}
+
+/* contents sect */
+/* text styling */
+.dtxt {
+  font-weight: 900;
+  color: var(--white);
+  -webkit-text-stroke: 1px black;
+}
+.contss {
+  background-color: var(--bg-col);
+}
+/* form sect */
+.formsct {
+  background-color: var(--addpetbg);
+}
+form input{
+  height: 55px;
+  max-width: 600px;
+}
+form  textarea{
+  max-width: 600px;
+}
+/* admin.html */
+/* icon */
+.imgicon {
+  width: 80px;
+}
+.imgiconi {
+  width: 25px;
+}
+/* admin sect */
+.admins {
+  min-height: 100vh;
+  background-color: var(--bg-col);
+}
+.tabad {
+  background-color: var(--white);
+}
+.table{
+  vertical-align: middle!important;
+}
+.hhs{
+  height: 100px;
+}
+/* petition.html */
+/* sect */
+.contssect {
+  background-color: var(--bg-col);
+}
+/* title of pet */
+.wdt {
+  max-width: 700px;
+  width: 100%;
+}
+/* height of pet img */
+.hs{
+  max-height: 500px;
+  height: 100%;
+}
+/* font sizing for pet details */
+.pcp{
+  line-height: 39px;
+  font-size: 20px;
+}
+
+.share {
+  max-width: 400px;
+  background-color: var(--white);
+  width: 100%;
+  border-radius: 10px 14px;
+  font-size: 20px;
+}
+.share .fa-whatsapp{
+  color: #075e54;
+}
+.share .fa-facebook-f{
+  color:#3b5998;
+}
+
+
+/* singnin.html */
+/* sect */
+.createacct {
+  background-image: url(../img/Group\ 50.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* signin */
+.flx {
+  max-width: 450px;
+  width: 100%;
+}
+/* signin form */
+.fms {
+  border-radius: 100px 0;
+}
+.ssmall {
+  font-size: 10px;
+}
+/* signin btn */
+
+.btns{
+  width:150px;
+  margin: 0 auto;
+  border-radius: 50px;
+}

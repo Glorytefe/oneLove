@@ -1,0 +1,217 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&display=swap");
+/* Root variables */
+:root {
+  --darkpur: #7255a4;
+  --yelcol: #f1bf45;
+  --blktxt: #1a1f24;
+  --footerbk: #37343e;
+  --sectbkcol: #f2f5fa;
+  --linecol: rgba(168, 141, 216, 0.5);
+  --white: #ffffff;
+}
+
+/* top sect starts */
+/* background img */
+.topsect {
+  background-image: url(/img/Group\ 7.png);
+  background-repeat: no-repeat;
+  /* min-height: 80vh; */
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+p {
+  color: var(--blktxt);
+}
+section {
+  letter-spacing: 1px;
+  font-family: "Mukta", sans-serif;
+}
+/*nav  */
+header {
+  border-bottom: 1px solid var(--linecol);
+}
+.navbtn {
+  background-color: var(--darkpur);
+  text-align: left;
+  border-radius: 5px;
+  
+}
+
+/* top cont */
+.just {
+  max-width: 500px;
+  width: 100%;
+}
+.justa {
+  font-weight: bolder;
+  font-size: 43px;
+  color:rgba(114, 85, 164, 0.1);
+  -webkit-text-stroke: 1px #000000;
+}
+.just p{
+  font-size: 20px;
+  color: #1A1F24;
+}
+.bb{
+  width: 195px;
+  height: 45px;
+}
+
+/*  */
+.purp {
+  background-color: var(--darkpur);
+}
+.bt-yel {
+  border: 1px solid var(--yelcol);
+}
+.yeltxt {
+  color: var(--yelcol);
+}
+.purp p{
+  color: rgba(255, 255, 255, 0.7);
+}
+/* row layer */
+.rows .card-body,
+.feat {
+  background-color: var(--sectbkcol);
+}
+
+/* third sect feat */
+
+.ws{
+  max-width: 400px;
+  width: 100%;
+}
+.feat .ftt,
+.ftt{
+  font-size: 14px;
+  color:#777777;
+  font-weight: 500px;
+  line-height: 28px;
+}
+
+/* fourth sect */
+/* form */
+.newsform {
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  /* height: 50px; */
+  border-radius: 25px;
+  box-shadow:  0px 0px 28px rgba(118, 118, 118, 0.25);
+}
+.newsform input {
+ margin: 0px 50px;
+  border: none;
+  width: 100%;
+  flex-grow: 2;
+  height: 50px;
+
+}
+
+.newsform input:focus {
+  outline: none;
+}
+
+/* btn for form */
+
+.fmbtn {
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* footer */
+.foots {
+  background-color: var(--footerbk);
+}
+/* index.html ends */
+
+/* createcause.html starts */
+.purs {
+  height: 10px;
+  background-color: var(--darkpur);
+}
+.forms {
+  background-color: var(--sectbkcol);
+}
+.imgfm {
+  background-image: url(../img/Group\ 17.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.forms form input{
+  height: 60px;
+}
+
+
+/* createcause.html ends */
+
+/* createacct.html starts */
+.ff {
+  min-height: 100vh;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+/* createacct.html ends */
+
+/* dashboard.html */
+.navyel {
+  background-color: var(--yelcol);
+}
+.tabb {
+  background-color: var(--sectbkcol);
+  /* min-height: 100vh; */
+}
+table{
+  vertical-align: middle!important;
+}
+
+/* veiw */
+.imgs {
+  width: 25px;
+}
+
+.bggs {
+  background-color: var(--linecol);
+}
+
+.uls {
+  list-style: none;
+}
+
+.cd{
+  max-height: 600px;
+  height: 100%;
+}
+.cd img{
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+ .cds{
+  max-width: 300px;
+}
+/* share icon color */
+.iconsfa .fa-facebook-f{
+  color: #3b5998; 
+}
+
+.iconsfa .fa-twitter{
+  color: #1da1f2;
+}
+/* */
+.iconsfa .fa-whatsapp{
+  color: #128c7e ;
+}
+

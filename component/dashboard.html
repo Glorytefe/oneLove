@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css" />
+     <!-- font awesome -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+   />
+  
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <!-- nav sect -->
+    <section class="purp">
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark w-100">
+          <div class="container">
+            <a href="../index.html" class="navbar-brand"><img src="/img/Group 15.png" alt="" /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ulnavs ms-auto ">
+                <li class="nav-item ">
+                  <!-- first link -->
+                  <a class="nav-link text-white me-5 p-2" aria-current="page" href="./createCause.html"
+                    >Create Cause</a
+                  >
+                </li>
+
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+    <!-- contents -->
+    <section class="table-responsive tabb">
+      <div class="container">
+        <!-- dashboard/home div -->
+
+        <div class="d-md-flex py-5">
+          <!-- nav tab -->
+          <div
+            class="nav flex-column nav-pills me-2 bg-white py-5 px-1"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <!-- first btn nav for Cause list -->
+            <button
+              class="nav-link active  my-2 p-2"
+              id="v-pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-home"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-home"
+              aria-selected="true"
+            >
+           <span> <i class="fas fa-home"></i><br> <small>CauseList</small></span>
+            </button>
+            <!-- 2nd btn nav for create list -->
+
+            <button
+              class="nav-link my-2"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+            >
+             <span><i class="far fa-edit p-2"></i><br><small>create cause</small></span>
+              <!-- <small>Create Cause</small> -->
+            </button>
+          </div>
+          <!-- content tab -->
+          <div
+            class="tab-content w-100  px-1 py-5 bg-white"
+            id="v-pills-tabContent"
+          >
+            <!-- content for Cause list -->
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <!-- table starts -->
+              <div class="table-responsive">
+                  <div  class="p-4">
+                   <h3 class="p-2 justa">Cause list</h3>
+                   <div id="noa"></div>
+                  </div>
+     
+              <div class="container-fluid">
+                <table class="table table-striped table-hover table-border">
+                  <tbody id="contentsd">
+                  <!-- data fetched from scripts/main.js -->
+                  </tbody>
+                </table>
+              </div>
+              </div>
+            </div>
+            <!-- content for create Cause -->
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              <!-- creat pet form -->
+              <section class="py-5">
+                <div class="container">
+                  <div class="row align-items-center py-2">
+                    <div class="col-md-6 col-lg-6 col-sm-12">
+              <h4 class="p-5 justa">Create Cause</h4>
+        <form action="" class="p-3 just mx-auto my-5" id="createCauseForm" enctype="multipart/form-data">
+             
+
+              <!-- username -->
+              <div class="mb-3">
+                <label for="username" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                required/>
+                <!-- title of pettn -->
+              </div>
+              <div class="mb-3">
+                <label for="causename" class="form-label"
+                  >Title of Cause</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="causename"
+                  placeholder=""
+                required/>
+              </div>
+              <!-- pet desc -->
+              <div class="mb-3">
+                <label for="Desc" class="form-label"
+                  >Cause Description</label
+                >
+                <textarea class="form-control" id="Desc" rows="7" required></textarea>
+              </div>
+              <div class="mb-3">
+                <input type="file" name="file" id="file" required/>
+              </div>
+              <div class="text-center">
+                  <button class="btn text-white w-50 text-center py-2 btn navbtn" id="">
+                    Create Cause
+                  </button></a
+                >
+              </div>
+            </form>
+                      </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-sm-12">
+                     <img
+                          src="../img/Group 17.png"
+                          class="w-100"
+                          alt=""
+                        />
+                     
+                    </div>
+                  </div>
+                </div>
+              </section>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- newsletter sect -->
+     <section class="news my-5 py-5">
+      <div class="container text-center">
+        <div class="pt-5">
+              <h3>Subscribe To Newsletter</h3>
+          <p>Subscribe to our newsletter and get the latest updates & offers</p>
+        </div>
+        <!-- form for newsletter -->
+          <form action="" class="newsform p-1 m-2  mx-auto w-100">
+              <input type="email" placeholder=" submit your email address" class="">
+              <button class=" navbtn py-2 me-2  text-white text-center fmbtn">Submit</button>
+          </form>
+      </div>
+  </section>
+
+    <!-- footer sect -->
+    <section class="foots p-1">
+      <footer class="container text-center pt-3">
+        <p class="text-white">All Right Reserved &copy; Justice.com 2021</p>
+      </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

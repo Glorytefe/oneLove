@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+   
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Create Cause</title>
+  </head>
+  <body>
+    <!-- contents starts -->
+    <section class="forms">
+        
+      <div>
+        <!-- row starts -->
+        <div class="row no-gutters ">
+          <!-- first column -->
+          <div class="col-md-6 col-lg-6 col-sm-12 p-0">
+              <div class="purs"></div>
+            <!-- form for add pet -->
+            <div class="container-fluid d-flex ff">
+                <form action="" class="w-75 my-5" id="createCauseForm" enctype="multipart/form-data">
+              <img src="../img/Group 14.png" alt="" />
+              <h4 class="py-5">Create Cause</h4>
+ 
+              <!-- username -->
+              <div class="mb-3">
+                <label for="username" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                required/>
+                <!-- title of pettn -->
+              </div>
+              <div class="mb-3">
+                <label for="causename" class="form-label"
+                  >Title of Cause</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="causename"
+                  placeholder=""
+                required/>
+              </div>
+              <!-- pet desc -->
+              <div class="mb-3">
+                <label for="Desc" class="form-label"
+                  >Cause Description</label
+                >
+                <textarea class="form-control" id="Desc" rows="10" required></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="file">Upload Image</label><br />
+              
+                <input type="file" name="file" id="file" class="w-100 bg-white"  required/>
+
+              </div>
+              <div class="text-center">
+                  <button class="btn text-white w-50 text-center py-2 btn navbtn" id="">
+                    Create Cause
+                  </button></a
+                >
+              </div>
+            </form>
+            </div>
+          </div>
+          <!-- second column -->
+          <div class="col-md-6 col-lg-6-col-sm-12 p-0 imgfm ">
+            
+              <div>
+            
+              </div>
+          </div>
+        </div>
+        <!-- row ends -->
+      </div>
+    </section>
+    <!-- content ends -->
+   <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+      <script src="../scripts/main.js"></script>
+
+  </body>
+</html>
